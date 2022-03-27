@@ -25,6 +25,10 @@ git add = adicionar arquivo a ser acompanhado (committed)
 .gitignore = arquivo do git pra ignorar arquivos
 git commit -m "" = enviar msg de commit
 git revert <hash do commit> = reverte o commit e o código
+git stash = serve para salvar o estado de um arquivo em um local temporário
+git stash apply <número do stash> = faz um merge do stash com o arquivo atual mas não limpa a lista de stash
+git stash drop <número do stash> = limpa a lista de stash
+git stash pop = aplica o stash e tira ele da lista 
 git log = vê o histórico do arquivo (nenhum commit possui o mesmo hash)
 git log --one line = reduz as informações do git log
 git log -p = mostra as alterações do commit
@@ -51,7 +55,7 @@ HEAD (local onde estamos) -> master (ramo ou brand)-->
         <ul>
             <li>Vagrant: Gerenciando máquinas virtuais</li>
             <li>Docker: Criando containers sem dor de cabeça</li>
-            <li>Ansible</li>
+            <li>Ansible: Sua infraestrutura como código</li>
             <li>Integração Contínua</li>
             <li>Kubernetes: Introdução a orquestração de containers</li>
         </ul>
