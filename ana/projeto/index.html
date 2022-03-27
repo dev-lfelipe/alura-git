@@ -1,0 +1,56 @@
+<!-- 
+link de alguns códigos: https://devhints.io/git-log
+
+Anotações do Git:
+
+Ver qual repositório estou: pwd
+iniciar o git: git init
+ver status do git: git status 
+
+Para o git saber quem sou eu:
+git config = configurações para modificar (--local ou --global pra maquina toda)
+git config --local user.name "Seu nome"
+git config --local user.email "seu@email"
+
+git branch = lista todos os branchs (por padrão o único existente é o master)
+git branch <nome do branch> = cria um branch novo
+git checkout <nome do branch> = troca de branch
+git checkout -b <nome do branch> = cria e troca de branch ao mesmo tempo
+git branch -M = define a branch que será usada
+git merge <nome da branch> = junta duas branchs
+
+git add = adicionar arquivo a ser acompanhado (committed)
+.gitignore = arquivo do git pra ignorar arquivos
+git commit -m "" = enviar msg de commit
+git log = vê o histórico do arquivo (nenhum commit possui o mesmo hash)
+git log --one line = reduz as informações do git log
+git log -p = mostra as alterações do commit
+git log --pretty="format: $H" = hash completo
+git log --pretty="format:%h %s" = hash resumido e mensagem
+
+git init --bare = inicia um repositório vazio ou que não terá cópia dos arquivos
+git remote = lista todos os repositórios remotos 
+git remote add = adiciona um repositório local com base no seu endereço
+git remote -v = lista os repositórios e mostra seus endereços
+
+git push = envia os arquivos do repositório para outro por meio do servidor
+git push -u = sempre que digitar git push ele enviará pro branch e repositório falado
+git pull = traz os arquivos do repositório local
+
+HEAD (local onde estamos) -> master (ramo ou brand)-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lista de cursos da Alura - Git Ana e Luiz</title>
+    </head>
+    <body>
+        <ul>
+            <li>Vagrant</li>
+            <li>Docker: criando containers sem dor de cabeça</li>
+            <li>Ansible</li>
+            <li>Integração Contínua</li>
+            <li>Kubernetes</li>
+        </ul>
+    </body>
+</html>
